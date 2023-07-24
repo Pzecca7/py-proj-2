@@ -1,0 +1,98 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 200px;
+    background-color: pink;
+    color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    height: 1825px;
+    background-color: rgb(250, 242, 230);
+    color: rgb(235, 136, 169);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#shop-name-nav {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+}
+
+a {
+    color: rgb(250, 242, 230);
+    font-size: 20px
+}
+
+a:hover {
+    color: aqua;
+}
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    margin-top: 40px;
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 25px;
+    color: aqua;
+}
+
+
+#cupcake-box {
+    height: 850px;
+}
+
+#cupcake {
+    height: 100px;
+    padding: 20px;
+}
+
+#weekly-menu {
+    width: 1350px;
+    height: 800px;
+    border-top: 3px solid aqua;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+#cupcake-info {
+    height: 400px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+button{
+    color: rgb(250, 242, 230);
+    background-color: rgb(235, 136, 169);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.15,1.15);
+}

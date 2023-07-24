@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/reset.css">
+    <link rel="stylesheet" href="../static/styles.css">
+    <title>Full Week Menu</title>
+</head>
+<body>
+    <header>
+
+        <img src="../static/cupcake-clipart.png" alt="cupcake" id="cupcake">
+                    <div id = shop-name-nav>
+            <h1>The Cupcake Shop</h1>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/one-cupcake">Cupcake</a>
+                <a href="/order">Cart</a>
+            </nav>
+    </div>
+        <img src="../static/cupcake-clipart.png" alt="cupcake" id="cupcake">
+
+    </header>
+
+    <main>
+        <img src="https://www.smallcakescupcakery.com/assets/gallery-home-1-mobile-a217b892f4844cc2e4d98098bfc235ae1e6d40d76d336ed5c1a676302c176012.jpg" alt="cupcake box" id="cupcake-box">
+    
+        <h2>Here is our menu for the week!</h2>
+        <div id="weekly-menu">
+            {% for cupcake in cupcakes  %}
+                <div id ="cupcake-info">
+                    <h3>{{ cupcake["name"] }}</h3>
+                    <h4>Flavor: {{ cupcake["flavor"] }}</h4>
+                    <h4>Frosting: {{ cupcake["frosting"] }}</h4>
+                    <h4><b>Price: ${{ cupcake["price"] }}</b></h4>
+                    <a href="{{ url_for('add_cupcake', name=cupcake['name']) }}">
+                        <button type="button" class="atc-btn">Add to Cart</button>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </main>
+    
+</body>
+</html>
