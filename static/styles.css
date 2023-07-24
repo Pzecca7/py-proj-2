@@ -96,3 +96,26 @@ button:hover{
     cursor: pointer;
     transform: scale(1.15,1.15);
 }
+
+#cart {
+        width: 1350px;
+        height: 800px;
+        border-top: 3px solid aqua;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+}
+
+#order-info{
+    height: 100px;
+    width: 800px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    margin-left: 250px;
+    margin-top: 30px;
+
+}

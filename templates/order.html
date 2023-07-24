@@ -25,6 +25,17 @@
     <main>
         <img src="https://www.smallcakescupcakery.com/assets/gallery-home-1-mobile-a217b892f4844cc2e4d98098bfc235ae1e6d40d76d336ed5c1a676302c176012.jpg" alt="cupcake box" id="cupcake-box">
         <h2>Here is your current order</h2>
+
+        <div id="cart">
+            {% for cupcake in cupcakes  %}
+                <div id ="order-info">
+                    <h3>{{ cupcake["name"] }}</h3>
+                    <h4>Flavor: {{ cupcake["flavor"] }}</h4>
+                    <h4>Frosting: {{ cupcake["frosting"] }}</h4>
+                    <h4><b>Price: ${{ cupcake["price"] }}</b></h4>
+                </div>
+            {% endfor %}
+        </div>
     </main>
 </body>
 </html>

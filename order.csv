@@ -1,3 +1,5 @@
 size,name,price,flavor,frosting,sprinkles,filling
 mini,Lemon,1.99,Lemon,Vanilla,['White Pearls'],
 regular,Red Velvet,2.99,Cocoa,Cream Cheese,['Red and White Hearts'],Cream Cheese
+Large,Oreo Bomb,3.99,Chocolate,Cookies and Cream,"['Oreo Crumbs', 'Chocolate']",Fudge
+mini,Vanilla Fudge,1.99,Vanilla,Chocolate,['Rainbow'],

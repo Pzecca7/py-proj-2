@@ -10,8 +10,8 @@ def home():
 
 @app.route("/cupcakes")
 def all_cupcakes():
-    full_menu = get_cupcakes("cupcakes.csv")
-    return render_template("cupcakes.html", cupcakes=full_menu)
+    cupcakes = get_cupcakes("cupcakes.csv")
+    return render_template("cupcakes.html", cupcakes=cupcakes)
 
 @app.route("/add-cupcake/<name>")
 def add_cupcake(name):
@@ -29,7 +29,8 @@ def one_cupcake():
 
 @app.route("/order")
 def order():
-    return render_template("order.html")
+    cupcakes = get_cupcakes("order.csv")
+    return render_template("order.html", cupcakes=cupcakes)
 
 if __name__ == "__main__":  
     app.run(debug = True, port = 8000, host = "localhost")
